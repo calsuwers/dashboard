@@ -39,6 +39,21 @@ Currently, only **SARS-CoV-2** data is included in this GitHub version.
 cd public_dashboard
 ```
 ### 2. Install Required R Packages
+This Shiny app uses `renv` to manage package dependencies. This ensures that the exact versions of R packages used in development are also used when you run the app — no version mismatches, no missing packages.
+
+✔️ One-time setup:
+1. Open R or RStudio in the project directory (the folder where app.R and renv.lock are located).
+2. Run the following commands in the R console:
+```R
+install.packages("renv")  # Only needed if you haven't installed renv yet
+renv::restore()           # Installs the exact package versions listed in renv.lock
+```
+This will download and install all necessary packages into a project-specific library managed by `renv` and you only need to run `renv::restore()` once unless the `renv.lock` file changes or you delete the local renv library.
+
+:lock: Notes:
+- The `renv.lock` file is committed to this repo — it ensures reproducibility.
+- The `renv/library/` folder (where packages are installed) is local to your machine and should not be committed to Git. It’s listed in `.gitignore`.
+
 
 ### 3. Update File Paths
 
@@ -51,6 +66,16 @@ cd public_dashboard
    # After:
    read_csv("Data/data.csv")
    ```
+
+### 4. Run the app
+
+Once the environment is set up, packages are downloaded and file paths are updated:
+- Simply open app.R in RStudio and click **"Run App"**, or
+- From the R console, run:
+```R
+source("app.R")
+```
+
 ### :pushpin: Notes
 
 The shapefile used in this dashboard **does not contain sewershed polygons** — only latitude and longitude coordinates for each sewershed. Therefore, polygons are not shown on the sewershed heatmap — only point markers are used.
