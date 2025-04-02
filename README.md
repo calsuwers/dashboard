@@ -1,7 +1,7 @@
 # California Wastewater Surveillance Dashboard (Reproduction)
 
 This repository is a **reproduction of the official California Wastewater Surveillance Dashboard** developed by the California Department of Public Health (CDPH):  
-🔗 https://skylab.cdph.ca.gov/calwws/s
+🔗 https://skylab.cdph.ca.gov/calwws/
 
 It is built using **R Shiny**, **Leaflet**, and **Plotly**, and includes interactive views of wastewater data by statewide, region or individual sewershed.
 
