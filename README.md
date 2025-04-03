@@ -1,13 +1,13 @@
 # California Wastewater Surveillance Dashboard (Reproduction)
 
 This repository is a **reproduction of the official California Wastewater Surveillance Dashboard** developed by the California Department of Public Health (CDPH):  
-🔗 https://skylab.cdph.ca.gov/calwws/
+https://skylab.cdph.ca.gov/calwws/
 
 It is built using **R Shiny**, **Leaflet**, and **Plotly**, and includes interactive views of wastewater data by statewide, region or individual sewershed.
 
 ---
 
-## 🧪 Pathogen Data Coverage
+## Pathogen Data Coverage
 
 The dashboard is designed to support multiple pathogens:
 - **SARS-CoV-2 (COVID-19)** (data provided in this repo)
@@ -18,7 +18,7 @@ The dashboard is designed to support multiple pathogens:
 Currently, only **SARS-CoV-2** data is included in this GitHub version.
 
 ---
-## 📂 file structure
+## File structure
 ```
 ├── Data/             # Contains all input CSV files and data
 ├── www/              # Static files (CSS, icons, images)
@@ -30,7 +30,7 @@ Currently, only **SARS-CoV-2** data is included in this GitHub version.
 
 
 
-## :gear: Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
