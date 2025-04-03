@@ -1,0 +1,664 @@
+/* =========================================================================
+   Custom styling for the dashboard
+   This file contains styles for various dashboard components,
+   including responsive adjustments using media queries.
+   ========================================================================= */
+
+/* --------------------------- 
+   Styles for screens wider than 1030px 
+----------------------------- */
+@media (min-width: 1031px) {
+  
+  /* Adjust header logo width */
+  .main-header .logo {
+    width: 650px;
+  }
+  
+  /* Shift the navbar to account for the logo width */
+  .main-header .navbar {
+    margin-left: 650px;
+  }
+  
+  /* Override text sizes for elements with classes text16 and text18 */
+  .text16 {
+    font-size: 12px !important; /* force 12px font size */
+  }
+  .text18 {
+    font-size: 15px !important; /* force 15px font size */
+  }
+  
+  /* Styling for regional summary box */
+  #regional_summary {
+    color: black;
+    background-color: #99b6cf;
+    border-color: #a7cdf2;
+    width: 90%;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px; /* replicates any wrapper margin */
+  }
+
+  /* Styling for state summary box */
+  #state_summary {
+    color: black; 
+    background-color: #99b6cf; 
+    border-color: #2e6da4;
+    width: 90%; 
+    font-weight: bold; 
+    font-size: 14px; 
+    border-radius: 10px; 
+    padding: 10px;
+  }
+  
+  /* Styling for level heatmap box */
+  #level_heatmap {
+    color: black; 
+    background-color: #99b6cf; 
+    border-color: #a7cdf2;
+    width: 90%; 
+    font-weight: bold; 
+    font-size: 18px; 
+    border-radius: 10px; 
+    padding: 10px;
+  }
+  
+  /* Additional padding for state info container */
+  .state-info-container {
+    padding-left: 45px;
+  }
+  
+  /* Modal dialog styling for regional modal */
+  #modal_region .modal-dialog{
+    width: 90vw;
+    height: 120vh;
+  }
+  
+  /* Set a fixed height for Plotly plots in region-plot2 container */
+  .region-plot2-container .plotly{
+    height: 900px !important;
+  }
+  
+  /* Styling for the dashboard title in header */
+  .dashboard-title {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+  
+  /* Custom font size for elements with class covid-text */
+  .covid-text {
+    font-size: 19px; !important;
+  }
+}
+
+/* --------------------------- 
+   Styles for screens 1030px wide or less 
+----------------------------- */
+@media (max-width: 1030px) {
+  
+  /* Adjust dashboard title font size for smaller screens */
+  .dashboard-title {
+    font-size: 16px !important;
+  }
+  
+  /* Regional summary box styling remains similar */
+  #regional_summary {
+    color: black;
+    background-color: #99b6cf;
+    border-color: #a7cdf2;
+    width: 90%;
+    font-weight: bold;
+    font-size: 14px; 
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  /* State summary box styling for smaller screens */
+  #state_summary {
+    color: black; 
+    background-color: #99b6cf; 
+    border-color: #2e6da4;
+    width: 90%; 
+    font-weight: bold; 
+    font-size: 14px; 
+    border-radius: 10px; 
+    padding: 10px;
+  }
+  
+  /* Level heatmap box styling, with reduced font size */
+  #level_heatmap {
+    color: black; 
+    background-color: #99b6cf; 
+    border-color: #a7cdf2;
+    width: 90%; 
+    font-weight: bold; 
+    font-size: 14px; 
+    border-radius: 10px; 
+    padding: 10px;
+  }
+
+  /* Maintain text size overrides for text16 and text18 */
+  .text16 {
+    font-size: 12px !important; /* override to 12px */
+  }
+  .text18 {
+    font-size: 15px !important; /* override to 15px */
+  }
+  
+  /* Add left and right padding for state info container */
+  .state-info-container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  /* Add top padding for level box container */
+  .level-box-container {
+    padding-top: 20px;
+  }
+
+  /* Adjust modal dialog dimensions for regional modal on smaller screens */
+  #modal_region .modal-dialog{
+    width: 90vw;
+    height: 190vh;
+  }
+
+  /* Increase height for Plotly plots in region-plot2 container */
+  .region-plot2-container .plotly{
+    height: 1700px !important;
+  }
+
+  /* Adjust covid-text font size for smaller screens */
+  .covid-text {
+    font-size: 17px; !important;
+  }
+}
+
+/* ---------------------------
+   Global Styles (Not within media queries)
+----------------------------- */
+
+/* Pseudo-element for the sidebar toggle icon
+   Note: In an external file, a single backslash should work, but ensure the font family is correct. */
+.main-header .sidebar-toggle:before {
+  content: '\f362'; 
+}
+
+/* Styling for skin-blue theme header logo and navbar */
+.skin-blue .main-header .logo {
+  background-color: #5A789A;
+}
+.skin-blue .main-header .logo:hover {
+  background-color: #5A789A;
+}
+.skin-blue .main-header .navbar {
+  background-color: #5A789A;
+}
+
+/* Sidebar menu link styling */
+.sidebar-menu > li > a {
+  font-size: 18px;
+  padding: 12px 5px;
+}
+
+/* Tab styling */
+.nav-tabs {
+  background-color: white;
+}
+.nav-tabs > li > a {
+  color: black;
+}
+/* Active tab styling with hover and focus overrides */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: #2C3E50 !important;
+  color: white !important;
+}
+
+/* Special button container styling in header */
+#my_special_button {
+  position: relative;
+  width: 100%;
+  margin-top: 2px;
+  text-align: center;
+}
+
+/* Button styling within the special button container */
+#my_special_button .btn {
+  background-color: #D8BFD8;
+  color: black;
+  border: 5px solid gray;
+  border-radius: 10px;
+  font-weight: bold; /* Make text bold */
+  font-size: 16px;
+}
+#my_special_button .btn:hover {
+  background-color: #89CFF0;
+  color: black;
+}
+
+/* ---------------------------
+   Sidebar collapse adjustments for larger screens
+----------------------------- */
+@media (min-width: 768px) {
+  .sidebar-collapse .main-sidebar {
+    width: 0px;
+  }
+  .sidebar-collapse .content-wrapper,
+  .sidebar-collapse .main-footer {
+    margin-left: 0px;
+  }
+}
+
+/* ---------------------------
+   Panel styling for collapsible elements
+----------------------------- */
+#collapse_state .panel-heading {
+  background-color: #D8BFD8 !important;
+  color: black !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+
+#collapseTable .panel-heading {
+  background-color: #e3dcdc !important;
+  color: black !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+  cursor: pointer;
+}
+#collapseTable .panel-body {
+  font-size: 18px;
+}
+
+/* Hover effects for summary boxes */
+#state_summary:hover {
+  background-color: #D8BFD8 !important;  /* Darker on hover */
+  color: black !important;
+  border-color: #ff4500!important;
+}
+
+#regional_summary:hover {
+  background-color: #66CDAA !important;  /* Darker on hover */
+  color: black !important;
+  border-color: #228b22 !important;
+}
+
+#level_heatmap:hover {
+  background-color: #f7f7a8 !important;  /* Darker on hover */
+  color: black !important;
+  border-color: #f5c97d !important;
+}
+
+/* ---------------------------
+   Tooltip styling for download buttons and related elements
+----------------------------- */
+
+/* Container for tooltips */
+#downloadButtonWithTooltip1, #downloadButtonWithTooltip2, #sewershed_tooltip_icon {
+  position: relative;
+  display: inline-block;
+  width: 100%;  /* Container spans full width */
+}
+
+/* Tooltip text styling */
+#downloadButtonWithTooltip1 .tooltip-text, #downloadButtonWithTooltip2 .tooltip-text{
+  visibility: hidden;
+  max-width: 400px;  /* Wider tooltip box */
+  background-color: #FFFACD;  /* Light yellow background */
+  color: #333333;  /* Dark text */
+  font-size: 16px;  /* Slightly smaller font */
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;  /* Padding inside tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;  /* Position above button */
+  left: 50%;  /* Center tooltip */
+  transform: translateX(-50%);  /* Centering fix */
+  opacity: 0;
+  transition: opacity 0.3s;
+  border: 3px solid #333333;  /* Thick dark border */
+  white-space: normal;  /* Allow wrapping */
+}
+
+/* Show tooltip on hover */
+#downloadButtonWithTooltip1:hover .tooltip-text, 
+#downloadButtonWithTooltip2:hover .tooltip-text, 
+#sewershed_tooltip_icon .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ---------------------------
+   Typography adjustments for headings and text elements
+----------------------------- */
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p, ul {
+  font-size: 18px;
+}
+
+/* ---------------------------
+   DataTables pagination styling
+----------------------------- */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 0;
+  margin-left: 0;
+  display: inline;
+  border: 0;
+  background: transparent;
+}
+
+/* ---------------------------
+   Content padding adjustments for the dashboard body
+----------------------------- */
+.content-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.dynamic-title {
+  padding-left: 20px;
+}
+
+/* ---------------------------
+   Select input styling
+----------------------------- */
+.selectize-dropdown, 
+.selectize-control.single .selectize-input {
+  background-color: #e3dcdc !important;
+  color: black !important;
+  border: 4px solid #5A789A !important;
+}
+/* Label styling for selectInput controls */
+label.control-label {
+  color: #e3dcdc !important;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* ---------------------------
+   Modal window adjustments
+----------------------------- */
+#modal_state .modal-dialog {
+  width: 90vw;
+  height: 90vh;
+}
+#modal_state .modal-header, 
+#modal_region .modal-header, 
+#modal_level_heatmap .modal-header {
+  background-color: #337ab7;
+}
+#modal_state .modal-footer, 
+#modal_region .modal-footer, 
+#modal_level_heatmap .modal-footer {
+  background-color: #337ab7;
+  color: white;
+  text-align: right;
+  padding: 15px;
+}
+
+#modal_level_heatmap .modal-dialog {
+  width: 90vw !important;
+}
+
+#modal_level_heatmap label {
+  color: black !important;
+  font-weight: bold;
+}
+
+/* ---------------------------
+   Level controls and box styling
+----------------------------- */
+.level-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 15px; /* Spacing between controls */
+  margin-top: 35px; /* Adjust vertical spacing */
+  margin-right: 35px;
+}
+
+.level-box {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+/* ---------------------------
+   Pretty switch styling for p-switch elements
+----------------------------- */
+.pretty.p-switch {
+  transform: scale(1.6);  /* Increase size */
+  margin-top: 14px;
+  margin-left: 40px;
+}
+
+/* ---------------------------
+   Dropdown and select styling adjustments
+----------------------------- */
+#level_site_dropdown {
+  font-size: 18px !important;  /* Increase selected text size */
+}
+.selectize-dropdown-content {
+  font-size: 18px !important;  /* Increase dropdown text size */
+}
+
+/* ---------------------------
+   Close button styling adjustments
+----------------------------- */
+#closeBtn, #closeBtn2, #closeBtn3 {
+  font-size: 18px; /* Increase close button font size */
+  background-color: #f44336; /* Red background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+#closeBtn:hover, #closeBtn2:hover, #closeBtn3:hover {
+  background-color: #d32f2f; /* Darker on hover */
+}
+
+/* ---------------------------
+   Checkbox and checkbox group adjustments
+----------------------------- */
+#show_vars .checkbox label {
+  font-size: 16px;  /* Increase font size for checkbox labels */
+  color: #000000;
+}
+
+.checkbox label {
+  white-space: normal;
+  word-wrap: break-word;
+}
+.checkbox-group-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkbox input {
+  margin-right: 10px;
+}
+
+/* ---------------------------
+   Styling for download panel and download buttons
+----------------------------- */
+/* Conditional panel styling */
+.download-panel {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Download buttons styling */
+#downloadData1, #downloadData2 {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#downloadData1:hover, #downloadData2:hover {
+  background-color: #285e8e;
+}
+
+/* ---------------------------
+   Data table download styling
+----------------------------- */
+.download-datatable-1 td, .download-datatable-1 th,
+.download-datatable-2 td, .download-datatable-2 th {
+  font-size: 18px;
+}
+
+/* ---------------------------
+   Data Download action buttons styling
+----------------------------- */
+#message_1, #message_2 {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #026769;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#message_1:hover, #message_2:hover {
+  background-color: #0a9a9c;
+}
+
+/* ---------------------------
+   Scoped styles within the dashboard update panel container
+----------------------------- */
+#dash_update_panel_container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #022852;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Panel header styling inside the dashboard update container */
+#dash_update_panel_container .panel-header {
+  background-color: #022852;
+  color: white;
+  padding: 13px;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* Hide default toggle button in the update panel container */
+#dash_update_panel_container #toggle_btn {
+  display: none;
+}
+
+/* Styling for scrollable content within the update panel */
+#dash_update_panel_container #scrollable_content {
+  max-height: 650px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Each entry row styling in the update panel */
+#dash_update_panel_container .entry {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-size: 17px;
+}
+/* Remove border from the last entry */
+#dash_update_panel_container .entry:last-child {
+  border-bottom: none;
+}
+
+/* ---------------------------
+   Instructions and technical notes section typography
+----------------------------- */
+.instructions-section p, .technical-notes-section p {
+  font-size: 21px;  /* Increase paragraph font size */
+}
+.instructions-section li, .technical-notes-section li {
+  font-size: 21px;  /* Increase list item font size */
+}
+.instructions-section h4, .technical-notes-section h4 {
+  font-size: 21px;  /* Increase heading size in these sections */
+}
+
+/* ---------------------------
+   Additional checkbox label sizing for specific sections
+----------------------------- */
+#show_vars_metrics .checkbox label, #show_vars_wastewater .checkbox label {
+  font-size: 18px;
+}
+
+/* ---------------------------
+   Styles for the sewershed plot tabset and its switches
+----------------------------- */
+#sewershed-plot-tabset .nav-tabs {
+  position: relative;
+  padding-right: 10px; /* Ensure space for switches */
+}
+#sewershed-plot-tabset .switch-container {
+  position: absolute;
+  right: 0px;
+  top: 10px; /* Vertical alignment */
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+#sewershed-plot-tabset .switch-label {
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+  top: 0px; /* Adjust label position */
+  font-size: 19px; /* Increase label font size */
+}
+#sewershed-plot-tabset .switch-input {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  background-color: #ccc;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: .4s;
+  top: -2px; /* Adjust switch vertical position */
+}
+#sewershed-plot-tabset .switch-input:first-of-type {
+  margin-right: 25px; /* Reduced spacing for first switch */
+}
+#sewershed-plot-tabset .switch-input:checked {
+  background-color: #2C3E50; /* ON state color */
+}
+#sewershed-plot-tabset .switch-input:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  top: 1px;
+  left: 1px;
+  transition: .4s;
+}
+#sewershed-plot-tabset .switch-input:checked:before {
+  transform: translateX(20px);
+}
+
+/* ---------------------------
+   Alert styling adjustments
+----------------------------- */
+.alert .confirm {
+  background-color: #2874A6 !important;
+}

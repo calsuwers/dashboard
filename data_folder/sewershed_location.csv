@@ -1,0 +1,137 @@
+"","sewershed","zipcode","lat","lng"
+"1","Napa (American Canyon)","94503",38.2,-122.23
+"2","Plumas (Quincy)","95971",39.9,-121
+"3","San Luis Obispo (Atascadero)","93422",35.5,-120.7
+"4","Kern (East Bakersfield)","93307",35.2,-118.8
+"5","Kern (West Bakersfield)","93313",35.1,-119
+"6","Imperial (Calexico)","92231",32.7,-115.5
+"7","Ventura (Camarillo)","93012",34.2,-119
+"8","Monterey (Carmel)","93922",36.5066168098147,-121.939290914245
+"9","Contra Costa (Concord)","94553",38,-122.1
+"10","Contra Costa (Central San)","94553",38,-122.1
+"11","San Luis Obispo (Cambria)","93428",35.6,-121
+"12","San Mateo (Pacifica)","94044",37.63,-122.49
+"13","Del Norte (Crescent City)","95531",41.8,-124.1
+"14","Butte (Chico)","95928",39.7,-121.8
+"15","Lake (Lakeport)","95453",39,-122.9
+"16","Santa Barbara (Lompoc)","93436",34.6,-120.4
+"17","San Bernardino (Redlands)","92373",34,-117.1
+"18","Sutter (Yuba City)","95991",39,-121.6
+"19","Marin (CMSA: San Rafael/Larkspur)","94901",37.97,-122.5
+"20","Marin (Ross Valley)","94901",37.97,-122.5
+"21","Marin (Corte Madera)","94925",37.93,-122.51
+"22","Marin (San Rafael)","94901",37.97,-122.5
+"23","Marin (West Railroad)","94901",37.97,-122.5
+"24","Santa Clara (Stanford Campus)","94305",37.42,-122.17
+"25","Santa Clara (Stanford Campus)","94305",37.42,-122.17
+"26","San Mateo (San Mateo)","94404",37.55,-122.27
+"27","Yolo (Davis)","95616",38.56,-121.82
+"28","Contra Costa (Delta Diablo: Pittsburg/Antioch/Bay Point)","94509",38,-121.81
+"29","Alameda (East Bay)","94607",37.81,-122.3
+"30","Alameda (Central East Bay)","94607",37.81,-122.3
+"31","Alameda (North East Bay)","94607",37.81,-122.3
+"32","Alameda (South East Bay)","94607",37.81,-122.3
+"33","El Dorado (El Dorado)","95762",38.7,-121.1
+"34","Imperial (El Centro)","92243",32.7,-115.8
+"35","Sonoma (Petaluma)","94954",38.2,-122.6
+"36","Yolo (Esparto)","95627",38.7,-122
+"37","Humboldt (Eureka)","95503",40.7,-124.1
+"38","Solano (California Medical Facility)","95696",NA,NA
+"39","Mendocino (Fort Bragg)","95437",39.5,-123.7
+"40","Fresno (Fresno)","93706",36.6,-119.9
+"41","Solano (Fairfield)","94534",38.2,-122.1
+"42","Santa Barbara (Goleta)","93117",34.2,-120
+"43","Nevada (Grass Valley)","95949",39.1,-121.1
+"44","San Benito (Hollister)","95023",36.9,-121.2
+"45","Kings (Hanford)","93239",36,-119.9
+"46","San Bernardino (Ontario)","91708",33.95,-117.65
+"47","Los Angeles (County)","90745",33.83,-118.26
+"48","Los Angeles (Lancaster)","93534",34.7,-118.2
+"49","Orange (Laguna Niguel - Coastal)","92677",33.53,-117.71
+"50","Orange (Laguna Niguel - JB Latham)","92677",33.53,-117.71
+"51","Orange (Laguna Niguel - Regional)","92677",33.53,-117.71
+"52","Lake (Northwest)","95453",39,-122.9
+"53","Lake (Southeast)","95453",39,-122.9
+"54","Los Angeles (City - Hyperion)","90293",33.95,-118.44
+"55","Los Angeles (LAX Airport)","90293",33.95,-118.44
+"56","Marin (Las Gallinas)","94903",38.02,-122.54
+"57","Merced (Los Banos)","93635",37,-120.9
+"58","San Luis Obispo (Los Osos)","93402",35.3,-120.8
+"59","Los Angeles (Tapia/Calabasas)","91302",34.13,-118.67
+"60","Madera (Madera City)","93637",36.9,-120.2
+"61","Mono (Mammoth Lakes)","93546",37.6,-118.8
+"62","San Joaquin (Manteca)","95337",37.7,-121.2
+"63","Marin (Tiburon)","94920",37.89,-122.47
+"64","Merced (Merced)","95341",37.2,-120.5
+"65","Stanislaus (Modesto)","95351",37.63,-120.98
+"66","Monterey (Marina)","93933",36.68,-121.79
+"67","San Joaquin (Mountain House)","95391",37.78,-121.56
+"68","Napa (Napa)","94558",38.5,-122.3
+"69","San Luis Obispo (Nipomo)","93444",35,-120.5
+"70","Marin (Novato)","94945",38.13,-122.56
+"71","Mariposa (El Portal: Yosemite Valley/NP)","95318",37.675,-119.781
+"72","Orange (Orange)","92708",33.71,-117.95
+"73","Butte (Oroville)","95965",39.6,-121.6
+"74","Ventura (Oxnard)","93033",34.15,-119.14
+"75","Santa Clara (Palo Alto)","94303",37.45,-122.12
+"76","San Luis Obispo (Paso Robles)","93446",35.6,-120.9
+"77","Placer (Roseville - Northwest)","95747",38.78,-121.37
+"78","Placer (Roseville - Southeast - Dry Creek)","95747",38.78,-121.37
+"79","Shasta (Redding - Clear Creek)","96007",40.5,-122.3
+"80","Shasta (Redding - Stillwater)","96007",40.5,-122.3
+"81","Riverside (Riverside)","92504",33.91,-117.4
+"82","San Mateo (Half Moon Bay)","94019",37.5,-122.4
+"83","Alameda (San Leandro)","94577",37.71,-122.16
+"84","San Mateo (East Palo Alto)","94303",37.45,-122.12
+"85","Marin (San Quentin Prison)","94964",37.94,-122.49
+"86","Santa Barbara (El Estero)","93103",34.43,-119.68
+"87","Santa Clara (Gilroy/Morgan Hill)","95020",37,-121.5
+"88","Santa Clara (San Jose)","95134",37.42,-121.97
+"89","Santa Clara (Sunnyvale)","94089",37.4,-122
+"90","Sonoma (Santa Rosa)","95403",38.51,-122.76
+"91","Marin (Sausalito)","94965",37.9,-122.6
+"92","San Bernardino (San Bernardino)","92408",34.08,-117.26
+"93","Santa Cruz (Santa Cruz City)","95060",37,-122.1
+"94","Santa Cruz (Combined)","95060",37,-122.1
+"95","Santa Cruz (Santa Cruz County)","95060",37,-122.1
+"96","Santa Cruz (Scotts Valley)","95066",37.07,-122.01
+"97","San Diego (San Diego)","92106",32.73,-117.23
+"98","San Francisco (Oceanside)","94102",37.78,-122.42
+"99","San Francisco (Southeast)","94124",37.73,-122.38
+"100","San Francisco (Alabama (Eastern Mission District))","94124",37.73,-122.38
+"101","San Francisco (Channel Station)","94124",37.73,-122.38
+"102","San Francisco (Ingalls (Smaller section of the S. Bayview))","94124",37.73,-122.38
+"103","San Francisco (Jackson (Chinatown & parts of N. Beach))","94124",37.73,-122.38
+"104","San Francisco (Newhall Fairfax)","94124",37.73,-122.38
+"105","San Francisco (Northshore Pump Station)","94124",37.73,-122.38
+"106","San Francisco (Paris & Persia (Excelsior))","94124",37.73,-122.38
+"107","San Francisco (Rayland & Rutland (Visitation Valley))","94124",37.73,-122.38
+"108","San Francisco (Southeast Lift Station)","94124",37.73,-122.38
+"109","San Luis Obispo (City of SLO)","93401",35.2,-120.6
+"110","Marin (Mill Valley)","94941",37.9,-122.57
+"111","San Diego (South Bay)","92154",32.6,-117
+"112","Sacramento (Sacramento)","95758",38.43,-121.44
+"113","San Luis Obispo (Oceano)","93445",35.07,-120.61
+"114","San Joaquin (Stockton)","95206",37.9,-121.4
+"115","El Dorado (South Lake Tahoe)","96150",38.8,-120.1
+"116","San Mateo (Silicon Valley)","94065",37.53,-122.23
+"117","Nevada (Tahoe-Truckee)","96161",39.2,-120.4
+"118","San Joaquin (Tracy)","95304",37.7,-121.4
+"119","Stanislaus (Turlock)","95380",37.5,-120.9
+"120","Yolo (UC Davis)","95620",38.4,-121.8
+"121","Alameda (Union City)","94587",37.6,-122
+"122","Alameda (Union City - Fremont Basin)","94587",37.6,-122
+"123","Alameda (Union City - Newark Basin)","94587",37.6,-122
+"124","Alameda (Union City - Union Basin)","94587",37.6,-122
+"125","Mendocino (Ukiah)","95482",39.1,-123.3
+"126","Solano (Vacaville)","95625",38.35,-121.92
+"127","Solano (Vallejo)","94590",38.1,-122.25
+"128","Riverside (Indio)","92201",33.7,-116.23
+"129","Santa Cruz (Watsonville)","95077",36.9201409639413,-121.763958126293
+"130","Contra Costa (Richmond)","94801",37.95,-122.36
+"131","San Joaquin (Lodi)","95242",38.1,-121.4
+"132","Sonoma (Windsor)","95492",38.53,-122.82
+"133","Yolo (Winters)","95694",38.6,-122
+"134","Yolo (Woodland)","95776",38.7,-121.7
+"135","Napa (Yountville)","94599",38.4,-122.36
+"136","San Joaquin (Lodi: Upstream)","95242",38.1,-121.4
