@@ -44,7 +44,7 @@ This Shiny app uses `renv` to manage package dependencies. This ensures that the
 1. Open R or RStudio in the project directory (the folder where app.R and renv.lock are located).
 2. Run the following commands in the R console:
 ```R
-getwd("/path to folder where app.R is located/") # Change the working directory in R console to the folder where app.R is located
+setwd("/path to folder where app.R is located/") # Change the working directory in R console to the folder where app.R is located
 install.packages("renv")  # Only needed if you haven't installed renv yet
 renv::init()              # Initializes renv and install packages
 source("renv/activate.R")           # Activates the renv environment
