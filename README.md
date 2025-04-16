@@ -33,9 +33,9 @@ Currently, only **SARS-CoV-2** data is included in this GitHub version.
 ## Setup Instructions
 
 ### 1. Clone the Repository
-
+In the terminal, navigate to the directory where you'd like to clone this repository and then run the following comment line. 
 ```bash
-git clone https://github.com/calsuwers/public_dashboard.git
+git clone https://github.com/calsuwers/dashboard.git
 ```
 ### 2. Install Required R Packages
 This Shiny app uses `renv` to manage package dependencies. This ensures that the exact versions of R packages used in development are also used when you run the app — no version mismatches, no missing packages.
@@ -58,14 +58,14 @@ This will download and install all necessary packages into a project-specific li
 
 ### 3. Update File Paths
 
- After cloning this repo, update file paths in `global.R` so that they point to the `Data/` folder inside your project.  
+ After cloning this repo, update file paths in `global.R` so that they point to the `data_folder/` folder inside your project.  
    Example:
    ```r
    # Before:
-   read_csv("path/to/your/data.csv")
+   read_csv("/path/to/your/dashboard/data_folder/data.csv")
 
    # After:
-   read_csv("Data/data.csv")
+   read_csv("/your specific path/dashboard/data_folder/data.csv")
    ```
 
 ### 4. Run the app
