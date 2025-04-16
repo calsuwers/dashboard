@@ -36,7 +36,6 @@ Currently, only **SARS-CoV-2** data is included in this GitHub version.
 
 ```bash
 [git clone https://github.com/calsuwers/public_dashboard.git]
-cd public_dashboard
 ```
 ### 2. Install Required R Packages
 This Shiny app uses `renv` to manage package dependencies. This ensures that the exact versions of R packages used in development are also used when you run the app — no version mismatches, no missing packages.
@@ -45,10 +44,12 @@ This Shiny app uses `renv` to manage package dependencies. This ensures that the
 1. Open R or RStudio in the project directory (the folder where app.R and renv.lock are located).
 2. Run the following commands in the R console:
 ```R
+getwd("/path to folder where app.R is located/") # Change the working directory in R console to the folder where app.R is located
 install.packages("renv")  # Only needed if you haven't installed renv yet
-renv::restore()           # Installs the exact package versions listed in renv.lock
+renv::init()              # Initializes renv and install packages
+source("renv/activate.R")           # Activates the renv environment
 ```
-This will download and install all necessary packages into a project-specific library managed by `renv` and you only need to run `renv::restore()` once unless the `renv.lock` file changes or you delete the local renv library.
+This will download and install all necessary packages into a project-specific library managed by `renv` and you only need to run `source("renv/activate.R")` once unless the `renv.lock` file changes or you delete the local renv library.
 
 :lock: Notes:
 - The `renv.lock` file is committed to this repo — it ensures reproducibility.
