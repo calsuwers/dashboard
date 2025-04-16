@@ -35,7 +35,7 @@ Currently, only **SARS-CoV-2** data is included in this GitHub version.
 ### 1. Clone the Repository
 
 ```bash
-[git clone https://github.com/calsuwers/public_dashboard.git]
+git clone https://github.com/calsuwers/public_dashboard.git
 ```
 ### 2. Install Required R Packages
 This Shiny app uses `renv` to manage package dependencies. This ensures that the exact versions of R packages used in development are also used when you run the app — no version mismatches, no missing packages.
