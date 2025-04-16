@@ -140,11 +140,11 @@ low_base_value = 50
 
 # Read dashboard update status from CSV
 dash_update_data <-
-  read.csv("~/github_public_dashboard/data_folder/dashboard_update_table.csv") %>%
+  read.csv("/path/to/your/dashboard/data_folder/dashboard_update_table.csv") %>%
   arrange(desc(date))
 
 # Read main site info table and remove trailing spaces
-td2 = readRDS(strwrap("~/github_public_dashboard/data_folder/td2.RDS")) %>% 
+td2 = readRDS(strwrap("/path/to/your/dashboard/data_folder/td2.RDS")) %>% 
   mutate(wwtp_name =  gsub(" $", "", wwtp_name),
          Label_Name = gsub(" $", "", Label_Name))
 
@@ -152,11 +152,11 @@ td2 = readRDS(strwrap("~/github_public_dashboard/data_folder/td2.RDS")) %>%
 sf_use_s2(F)
 
 # Read in coordinates for each sewershed (centroid-based)
-shape_df = read.csv("~/github_public_dashboard/data_folder/sewershed_location.csv")
+shape_df = read.csv("/path/to/your/dashboard/data_folder/sewershed_location.csv")
 
 # Code below reads shapefile instead of CSV — disabled for now
 # shape_df <-
-#   st_read("~/github_public_dashboard/data_folder/sewershed_location.csv") %>% 
+#   st_read("/path/to/your/dashboard/data_folder/sewershed_location.csv") %>% 
 #   st_transform(crs = 4326) %>%
 #   mutate(center = st_centroid(geometry)) %>% 
 #   mutate(lng = st_coordinates(center)[,1],
@@ -165,7 +165,7 @@ shape_df = read.csv("~/github_public_dashboard/data_folder/sewershed_location.cs
 #   st_zm()
 
 # Read in CA region shapefile and extract centroid coordinates
-ca_regions <- st_read("~/github_public_dashboard/data_folder/saveCARegions.shp")  %>% 
+ca_regions <- st_read("/path/to/your/dashboard/data_folder/saveCARegions.shp")  %>% 
   mutate(center = st_centroid(geometry)) %>% 
   mutate(lng = st_coordinates(center)[,1],
          lat = st_coordinates(center)[,2]) %>%
@@ -173,7 +173,7 @@ ca_regions <- st_read("~/github_public_dashboard/data_folder/saveCARegions.shp")
   st_zm() 
 
 # Read in CA counties shapefile
-ca_counties <- st_read("~/github_public_dashboard/data_folder/saveCACounties.shp")  %>% 
+ca_counties <- st_read("/path/to/your/dashboard/data_folder/saveCACounties.shp")  %>% 
   st_transform(crs = 4326) %>%
   mutate(center = st_centroid(geometry)) %>% 
   mutate(lng = st_coordinates(center)[,1],
@@ -184,20 +184,20 @@ ca_counties <- st_read("~/github_public_dashboard/data_folder/saveCACounties.shp
 region_table = td2 %>% select(region, Label_Name) %>% distinct() %>% rename_region()
 
 # Load regional aggregate COVID data
-d1 <- get_latest_csv("~/github_public_dashboard/data_folder/covid/saveRegionalAggregates/") %>%
+d1 <- get_latest_csv("/path/to/your/dashboard/data_folder/covid/saveRegionalAggregates/") %>%
   mutate(sample_date = as.Date(sample_date)) %>%
   select(-c("X"))
 
 # Load individual WWTP-level COVID metrics
-d2 <- get_latest_csv("~/github_public_dashboard/data_folder/covid/saveReportMetrics/") %>%
+d2 <- get_latest_csv("/path/to/your/dashboard/data_folder/covid/saveReportMetrics/") %>%
   mutate(across(c(Label_Name, wwtp_name), ~ gsub(" $", "", .)))
 
 # Placeholder for loading Flu/RSV aggregate data (commented out for now)
-# f1 <- get_latest_csv("~/github_public_dashboard/data_folder/Flu_RSV/saveRegionalAggregates/") %>%
+# f1 <- get_latest_csv("/path/to/your/dashboard/data_folder/Flu_RSV/saveRegionalAggregates/") %>%
 #   mutate(sample_date = as.Date(sample_date)) %>%
 #   select(-c("X")) %>% mutate(region = gsub(pattern = "state", replacement = "State", x = region))
 # 
-# f2 <- get_latest_csv("~/github_public_dashboard/data_folder/Flu_RSV/saveReportMetrics/") %>%
+# f2 <- get_latest_csv("/path/to/your/dashboard/data_folder/Flu_RSV/saveReportMetrics/") %>%
 #   mutate(across(c(Label_Name, wwtp_name), ~ gsub(" $", "", .))) %>% mutate(region = gsub(pattern = "state", replacement = "State", x = region))
 
 # Combine COVID + (optionally) Flu/RSV aggregate data
@@ -230,7 +230,7 @@ c2 <- d2 %>% #bind_rows(f2) %>%
 # Code below is for dynamically building level heatmap data from many CSVs in a folder
 
 # # Define the folder path
-# sewershed_folder_path <- "~/github_public_dashboard/data_folder/covid/saveReportMetrics/"
+# sewershed_folder_path <- "/path/to/your/dashboard/data_folder/covid/saveReportMetrics/"
 # 
 # # List all CSV files in the folder
 # csv_files <- list.files(sewershed_folder_path, pattern = "\\.csv$", full.names = TRUE)
