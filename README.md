@@ -58,7 +58,7 @@ This will download and install all necessary packages into a project-specific li
 
 ### 3. Update File Paths
 
- After cloning this repo, update file paths in `global.R` so that they point to the `data_folder/` folder inside your project.  
+ After cloning this repo, update file paths in `global.R` so that they point to the `data_folder` folder inside your project.  
    Example:
    ```r
    # Before:
