@@ -71,10 +71,7 @@ This will download and install all necessary packages into a project-specific li
 ### 4. Run the app
 
 Once the environment is set up, packages are downloaded and file paths are updated:
-- Simply open app.R in RStudio and click **"Run App"**, or
-- From the R console, run:
-```R
-source("app.R")
+- Simply open app.R in RStudio and click **"Run App"**
 ```
 
 ### :pushpin: Notes
