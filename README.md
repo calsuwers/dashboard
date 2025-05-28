@@ -31,6 +31,13 @@ Currently, only **SARS-CoV-2** data is included in this GitHub version.
 
 
 ## Setup Instructions
+Before proceeding with the steps below, please ensure that Git is installed on your computer.
+You can find installation instructions here: https://github.com/git-guides/install-git
+
+To verify that Git is properly installed, open your terminal and type:
+```bash
+git --version
+```
 
 ### 1. Clone the Repository
 In the terminal, navigate to the directory where you'd like to clone this repository and then run the following comment line. 
