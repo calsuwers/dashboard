@@ -1,9 +1,14 @@
-# California Wastewater Surveillance Dashboard (Reproduction)
+# California Wastewater Surveillance Dashboard
 
-This repository is a **reproduction of the official California Wastewater Surveillance Dashboard** developed by the California Department of Public Health (CDPH):  
-https://skylab.cdph.ca.gov/calwws/
+This repository contains the source code for the [official California Wastewater Surveillance Dashboard developed](https://skylab.cdph.ca.gov/calwws/) by the California Department of Public Health (CDPH).
 
-It is built using **R Shiny**, **Leaflet**, and **Plotly**, and includes interactive views of wastewater data by statewide, region or individual sewershed. This renv.lock was written using R version 4.5.2. It should also work with newer versions of R, but if you encounter issues during `renv::restore()`, please try using the same R version or check package compatibility.
+This dashboard is built using **R Shiny**, **Leaflet**, and **Plotly**, offering interactive views of wastewater data at statewide, regional, and individual sewershed levels.
+
+## Environment & Compatibility
+The `renv.lock` file was generated using **R version 4.5.2**. While the project is expected to support newer versions of R, we recommend using version 4.5.2 if you encounter any compatibility issues during `renv::restore()`.
+
+> **⚠️ Note regarding Versioning**
+> This repository currently hosts the **first version (v1)** of the dashboard. It differs from the [live production version](https://skylab.cdph.ca.gov/calwws/). We are working to finalize the code for the current production dashboard and will update this repository shortly.
 
 ---
 
